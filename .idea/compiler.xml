@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="businesslayer" />
+        <module name="datalayer" />
+        <module name="controller" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="businesslayer" target="17" />
+      <module name="controller" target="17" />
+      <module name="datalayer" target="17" />
+      <module name="transaction-validator" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="businesslayer" options="-parameters" />
+      <module name="controller" options="-parameters" />
+      <module name="datalayer" options="-parameters" />
+      <module name="transaction-validator" options="-parameters" />
+    </option>
+  </component>
+</project>
